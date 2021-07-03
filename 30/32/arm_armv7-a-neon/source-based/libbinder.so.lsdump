@@ -740,6 +740,9 @@
    "name" : "_ZN7android12ProcessState32getStrongRefCountForNodeByHandleEi"
   },
   {
+   "name" : "_ZN7android12ProcessState4initEPKcb"
+  },
+  {
    "name" : "_ZN7android12ProcessState4selfEv"
   },
   {
@@ -1283,10 +1286,6 @@
   },
   {
    "name" : "_ZN7android2os20ParcelFileDescriptorD2Ev"
-  },
-  {
-   "binding" : "weak",
-   "name" : "_ZN7android2spINS_12ProcessStateEED2Ev"
   },
   {
    "binding" : "weak",
@@ -4158,9 +4157,6 @@
    "name" : "_ZN7android12gTextBuffersE"
   },
   {
-   "name" : "_ZN7android13gProcessMutexE"
-  },
-  {
    "name" : "_ZN7android14IShellCallback10descriptorE"
   },
   {
@@ -4246,9 +4242,6 @@
   },
   {
    "name" : "_ZN7android8BpBinder30sBinderProxyCountHighWatermarkE"
-  },
-  {
-   "name" : "_ZN7android8gProcessE"
   },
   {
    "name" : "_ZTCN7android10AllocationE0_NS_10IInterfaceE"
@@ -10264,6 +10257,22 @@
    "source_file" : "/frameworks/native/libs/binder/include/binder/ProcessState.h"
   },
   {
+   "access" : "private",
+   "function_name" : "android::ProcessState::init",
+   "linker_set_key" : "_ZN7android12ProcessState4initEPKcb",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIN7android2spINS_12ProcessStateEEE",
+   "source_file" : "/frameworks/native/libs/binder/include/binder/ProcessState.h"
+  },
+  {
    "function_name" : "android::ProcessState::self",
    "linker_set_key" : "_ZN7android12ProcessState4selfEv",
    "return_type" : "_ZTIN7android2spINS_12ProcessStateEEE",
@@ -12062,19 +12071,6 @@
    ],
    "return_type" : "_ZTIv",
    "source_file" : "/frameworks/native/libs/binder/include/binder/ParcelFileDescriptor.h"
-  },
-  {
-   "function_name" : "android::sp<android::ProcessState>::~sp",
-   "linker_set_key" : "_ZN7android2spINS_12ProcessStateEED2Ev",
-   "parameters" :
-   [
-    {
-     "is_this_ptr" : true,
-     "referenced_type" : "_ZTIPN7android2spINS_12ProcessStateEEE"
-    }
-   ],
-   "return_type" : "_ZTIv",
-   "source_file" : "/system/core/libutils/include/utils/StrongPointer.h"
   },
   {
    "function_name" : "android::sp<android::BBinder>::~sp",
@@ -22093,7 +22089,7 @@
    "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
    "self_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
    "size" : 4,
-   "source_file" : "/frameworks/native/libs/binder/include/binder/LazyServiceRegistrar.h"
+   "source_file" : "/frameworks/native/libs/binder/include/binder/Parcel.h"
   },
   {
    "alignment" : 4,
@@ -25480,7 +25476,7 @@
    "referenced_type" : "_ZTIi",
    "self_type" : "_ZTIPi",
    "size" : 4,
-   "source_file" : "/frameworks/native/libs/binder/include/binder/MemoryBase.h"
+   "source_file" : "/frameworks/native/libs/binder/include/binder/Parcel.h"
   },
   {
    "alignment" : 4,
@@ -27147,7 +27143,7 @@
    "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
    "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
    "size" : 12,
-   "source_file" : "/frameworks/native/libs/binder/include/binder/LazyServiceRegistrar.h"
+   "source_file" : "/frameworks/native/libs/binder/include/binder/Parcel.h"
   },
   {
    "alignment" : 4,
@@ -27555,7 +27551,7 @@
    "referenced_type" : "_ZTIi",
    "self_type" : "_ZTIVi",
    "size" : 4,
-   "source_file" : "/frameworks/native/libs/binder/include/binder/ProcessState.h"
+   "source_file" : "/frameworks/native/libs/binder/include/binder/BpBinder.h"
   }
  ],
  "record_types" :

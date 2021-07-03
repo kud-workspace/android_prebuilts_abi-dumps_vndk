@@ -739,6 +739,9 @@
    "name" : "_ZN7android12ProcessState32getStrongRefCountForNodeByHandleEi"
   },
   {
+   "name" : "_ZN7android12ProcessState4initEPKcb"
+  },
+  {
    "name" : "_ZN7android12ProcessState4selfEv"
   },
   {
@@ -1282,10 +1285,6 @@
   },
   {
    "name" : "_ZN7android2os20ParcelFileDescriptorD2Ev"
-  },
-  {
-   "binding" : "weak",
-   "name" : "_ZN7android2spINS_12ProcessStateEED2Ev"
   },
   {
    "binding" : "weak",
@@ -4153,9 +4152,6 @@
    "name" : "_ZN7android12gTextBuffersE"
   },
   {
-   "name" : "_ZN7android13gProcessMutexE"
-  },
-  {
    "name" : "_ZN7android14IShellCallback10descriptorE"
   },
   {
@@ -4241,9 +4237,6 @@
   },
   {
    "name" : "_ZN7android8BpBinder30sBinderProxyCountHighWatermarkE"
-  },
-  {
-   "name" : "_ZN7android8gProcessE"
   },
   {
    "name" : "_ZTCN7android10AllocationE0_NS_10IInterfaceE"
@@ -10259,6 +10252,22 @@
    "source_file" : "/frameworks/native/libs/binder/include/binder/ProcessState.h"
   },
   {
+   "access" : "private",
+   "function_name" : "android::ProcessState::init",
+   "linker_set_key" : "_ZN7android12ProcessState4initEPKcb",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIN7android2spINS_12ProcessStateEEE",
+   "source_file" : "/frameworks/native/libs/binder/include/binder/ProcessState.h"
+  },
+  {
    "function_name" : "android::ProcessState::self",
    "linker_set_key" : "_ZN7android12ProcessState4selfEv",
    "return_type" : "_ZTIN7android2spINS_12ProcessStateEEE",
@@ -12057,19 +12066,6 @@
    ],
    "return_type" : "_ZTIv",
    "source_file" : "/frameworks/native/libs/binder/include/binder/ParcelFileDescriptor.h"
-  },
-  {
-   "function_name" : "android::sp<android::ProcessState>::~sp",
-   "linker_set_key" : "_ZN7android2spINS_12ProcessStateEED2Ev",
-   "parameters" :
-   [
-    {
-     "is_this_ptr" : true,
-     "referenced_type" : "_ZTIPN7android2spINS_12ProcessStateEEE"
-    }
-   ],
-   "return_type" : "_ZTIv",
-   "source_file" : "/system/core/libutils/include/utils/StrongPointer.h"
   },
   {
    "function_name" : "android::sp<android::BBinder>::~sp",
